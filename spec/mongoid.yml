@@ -1,0 +1,13 @@
+test:
+  clients:
+    default:
+      database: snapshot_aggregate_root_test
+      hosts:
+        - localhost:27027
+      options:
+        read:
+          mode: :primary
+        write:
+          w: 1
+  options:
+    use_utc: true
